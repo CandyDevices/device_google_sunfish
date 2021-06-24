@@ -942,12 +942,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota_retrofit.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1
 
-# IMS/Telephony
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml \
-    telephony-ext
-
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
