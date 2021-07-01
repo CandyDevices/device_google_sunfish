@@ -299,6 +299,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
     vendor.audio.offload.gapless.enabled=true \
 
+# Google Assistant
+PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
+
 # MaxxAudio effect and add rotation monitor
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.audio.monitorRotation=true
@@ -1019,3 +1022,6 @@ PRODUCT_PACKAGES += \
 # Shared java libs
 PRODUCT_PACKAGES += \
     com.android.nfc_extras
+
+# Vendor Properties
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
