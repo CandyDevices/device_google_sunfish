@@ -96,10 +96,6 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml \
     telephony-ext
 
-# EUICC
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
-
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)
@@ -948,6 +944,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota_retrofit.mk)
 # Native video calling
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1
+
+# IMS/Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    telephony-ext
 
 # RCS
 PRODUCT_PACKAGES += \
