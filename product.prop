@@ -105,3 +105,4 @@ drm.service.enabled=true
 media.mediadrmservice.enable=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
+
