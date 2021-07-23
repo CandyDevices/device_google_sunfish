@@ -422,4 +422,7 @@
 
     <bool name="config_fingerprintSupportsGestures">true</bool>
 
+    <!-- Burn in protection -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
+
 </resources>
